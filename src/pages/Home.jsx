@@ -1,7 +1,7 @@
 import React from 'react'
 import "../styles/home.css"
 import Navbar from '../components/Navbar'
-import Profle from '../resources/profile.jpg'
+import Profle from '.././resources/profile.jpg'
 import Statcard from '../components/Statcard'
 import AchiCard from '../components/AchiCard'
 import IconDiv from '../components/IconDiv'
