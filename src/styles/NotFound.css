@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,700&display=swap');
+:root {
+    --black: #32292f60;
+    --red: #F03A47;
+    --pastel: #f9f9f7;
+    --lightgreen: #79bb6a;
+    --green: #134f05;
+}
+
+* { 
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+}
+
+#body404{ 
+    background-color: var(--pastel);
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container404{ 
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: max-content;
+    position: absolute;
+}
+
+.icon404{ 
+    position: relative;
+    font-size: 16rem;
+    font-weight: bold;
+    color: var(--red);
+}
+
+.info404{ 
+    position: relative;
+    min-height: 16rem;
+    max-width: 50%;
+    /* position: relative; */
+    display: flex; 
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    margin-left: 2rem;
+}
+
+#heading404{ 
+    font-size: 4rem;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    color: var(--red);
+}
+#text404{
+    position: relative;
+    max-width: 80%;
+    font-size: 2rem;
+    color: var(--lightgreen);
+    padding-bottom: 2rem;
+}
+
+#name404{ 
+    font-size: 2rem;
+    color: var(--green);
+    cursor: pointer;
+
+}
+
+

@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,700&display=swap');
+
+:root {
+    --black: #32292f60;
+    --red: #F03A47;
+    --pastel: #f9f9f7;
+    --lightgreen: #79bb6a;
+    --green: #134f05;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
+    width: 100%;
+    /* background-color: var(--lightgreen); */
+}
+
+main {
+    /* margin: 5rem; */
+    /* border-radius: 3rem; */
+    /* padding: 2rem; */
+    background-color: var(--pastel);
+overflow: hidden;
+    height: 100vh;
+    /* z-index: -2; */
+    /* box-shadow: 0 0 1rem 0.5rem #32292f2f; */
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    /* z-index: -1; */
+    /* width: 100%; */
+    background-image: url("https://img.freepik.com/free-photo/white-woven-fabric_53876-89528.jpg?w=1380&t=st=1695632079~exp=1695632679~hmac=efdf5ea3a9ddb18799040d753c1fce5d805f86a9356f8e9077a5a3a368d227f9");
+
+}
+
+/* the Hero section styling is here  */
+header {
+    color: var(--green);
+    padding: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-bottom: var(--green) solid 3px;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-title {
+    font-size: 3rem;
+}
+
+.nav-list {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.nav-list ul {
+    display: flex;
+    margin-right: 10.5rem;
+    list-style: none;
+}
+
+.nav-list ul li {
+    position: relative;
+    margin-left: 4rem;
+    z-index: 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-list ul li::after {
+    position: absolute;
+    bottom: -0.5rem;
+    background-color: #134f05;
+    left: 0;
+    transition: 0.5s;
+    content: "";
+    min-width: 0%;
+    text-align: center;
+    height: 0.2rem;
+    z-index: 1;
+    transition: all 0.5s;
+    border-radius: 2rem;
+    /* min-width: 100%; */
+}
+.nav-list ul li:hover::after {
+    position: absolute;
+    bottom: -0.5rem;
+    background-color: #134f05;
+    left: 0;
+    transition: 0.5s;
+    content: "";
+    /* min-width: 0%; */
+    text-align: center;
+    height: 0.2rem;
+    z-index: 1;
+    transition: all 0.5s;
+    min-width: 100%;
+}
+
+
+
+
+/* section 1 styling start here  */
+.section-1 {
+    display: flex;
+    margin-top: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    /* height: 100%; */
+}
+
+.section-1-div1 {
+    color: var(--black);
+    width: 50%;
+    padding-left: 6rem;
+    text-align: center;
+    font-size: 15rem;
+    line-height: 1%;
+}
+
+
+
+.div1p1 {
+    margin-top: 8rem;
+    text-align: left;
+}
+
+.div1p2 {
+    margin-top: 5rem;
+    text-align: left;
+    margin-left: 10rem;
+}
+
+.div1p3 {
+    margin-top: 5rem;
+    text-align: left;
+    margin-left: 15rem;
+    /* margin-bottom: 5rem; */
+    /* line-height: 100%; */
+}
+
+.section-1-div2 {
+    width: 50%;
+    color: var(--green);
+    font-size: 2rem;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    text-align: left;
+}
+
+h1 {
+    margin-top: 10rem;
+    color: var(--lightgreen);
+    font-weight: 200;
+}
+
+#hero-button {
+    transition: 0.5s;
+    position: relative;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    border: none;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    font-size: 1.5rem;
+    font-family: 'Merriweather', serif;
+    color: var(--pastel);
+    background-color: var(--green);
+
+}
+
+#hero-button:hover {
+    /* font-size: 1.8rem; */
+    scale: 1.2;
+    transition: 0.5s;
+}
+
+.section-1-div2 p {
+    margin-top: 1rem;
+}
+/* Utility Classes */
+.bold{
+    font-weight: bold;
+    color: black;
+}
+
+.boldHeading{ 
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
